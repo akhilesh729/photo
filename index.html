@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in DOM....</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 onclick="alert('h1 clicked by user')" id="a">Events in DOM....</h1>
+    <div id="ab">
+     hower at me
+    </div> <br>
+ <button id="abc">Click me</button>
+ <br> 
+   
+    <br>
+     
+    <a id="abcd" href="https://www.google.com"> <img src="my image.jpg" alt=""></a>
+
+<script>
+    document.getElementById('ab').addEventListener('click',()=>{
+    alert('are yr to jadu hai');
+    })
+   const btn=document.getElementById('abc');
+   
+   btn.addEventListener('click',()=>{
+    alert('first time cick ho gaya')
+   })
+
+   btn.addEventListener('click',()=>{
+    alert('Second time cick ho gaya')
+   })
+
+   btn.addEventListener('click',()=>{
+    alert('Third time cick ho gaya')
+   })
+
+   const anchor=document.getElementById('abcd');
+
+   console.log(anchor);
+   anchor.addEventListener('click',()=>{
+    alert('anchor got clicked')
+   })
+   
+   
+</script>
+</body>
+</html>
